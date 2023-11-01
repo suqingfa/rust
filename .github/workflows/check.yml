@@ -30,6 +30,6 @@ jobs:
           command: bench
 
       - uses: actions-rs/cargo@v1
-        name: Cargo Benchmark
+        name: Cargo Doc
         with:
           command: doc
