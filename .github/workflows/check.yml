@@ -14,22 +14,14 @@ jobs:
         with:
           toolchain: stable
 
-      - uses: actions-rs/cargo@v1
-        name: Cargo Build
-        with:
-          command: build
+      - name: Cargo Build
+        run: cargo build
 
-      - uses: actions-rs/cargo@v1
-        name: Cargo Test
-        with:
-          command: test
+      - name: Cargo Test
+        run: cargo test
 
-      - uses: actions-rs/cargo@v1
-        name: Cargo Benchmark
-        with:
-          command: bench
+      - name: Cargo Benchmark
+        run: cargo bench
 
-      - uses: actions-rs/cargo@v1
-        name: Cargo Doc
-        with:
-          command: doc
+      - name: Cargo Doc
+        run: cargo doc
