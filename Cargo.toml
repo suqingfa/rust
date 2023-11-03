@@ -11,3 +11,4 @@ harness = false
 
 [dependencies]
 criterion = "0.5.1"
+tokio = { version = "1.33.0", features = ["full"] }
